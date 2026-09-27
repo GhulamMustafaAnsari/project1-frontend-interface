@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DecodeLabs Intern Portal</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-brand">DecodeLabs <span>Intern Portal</span></div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#interns" class="active">Interns</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to Project 1</h1>
+      <p>Responsive Frontend Interface &mdash; Full Stack Development Training Kit</p>
+    </section>
+
+    <section id="interns" class="interns-section">
+      <div class="section-header">
+        <h2>Intern Directory</h2>
+        <div class="controls">
+          <input type="text" id="searchInput" placeholder="Search by name or role..." />
+          <button id="addInternBtn" class="btn-primary">+ Add Intern</button>
+        </div>
+      </div>
+
+      <div id="internGrid" class="intern-grid"></div>
+      <p id="emptyState" class="empty-state" hidden>No interns match your search.</p>
+    </section>
+  </main>
+
+  <div id="internModal" class="modal" hidden>
+    <div class="modal-content">
+      <h3>Add New Intern</h3>
+      <form id="internForm">
+        <label>Full Name
+          <input type="text" id="internName" required />
+        </label>
+        <label>Role
+          <input type="text" id="internRole" required />
+        </label>
+        <label>Email
+          <input type="email" id="internEmail" required />
+        </label>
+        <div class="modal-actions">
+          <button type="button" id="cancelBtn" class="btn-secondary">Cancel</button>
+          <button type="submit" class="btn-primary">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 DecodeLabs &middot; Batch 2026 Industrial Training Kit &middot; Project 1</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
